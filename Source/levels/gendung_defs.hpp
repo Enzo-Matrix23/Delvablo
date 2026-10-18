@@ -20,8 +20,9 @@ enum dungeon_type : int8_t {
 	DTYPE_HELL,
 	DTYPE_NEST,
 	DTYPE_CRYPT,
+	DTYPE_FOREST,
 
-	DTYPE_LAST = DTYPE_CRYPT,
+	DTYPE_LAST = DTYPE_FOREST,
 	DTYPE_NONE = -1,
 };
 
