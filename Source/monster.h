@@ -68,10 +68,10 @@ enum class UniqueMonsterType : uint8_t {
 	Lachdan,
 	WarlordOfBlood,
 	Butcher,
+	Incredifat,
 	HorkDemon,
 	Defiler,
 	NaKrul,
-	Incredifat,
 	None = static_cast<uint8_t>(-1),
 };
 
