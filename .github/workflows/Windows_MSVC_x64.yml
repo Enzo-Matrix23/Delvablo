@@ -65,7 +65,7 @@ jobs:
       with:
         name: delvablo.exe
         path: |
-            build-ninja-vcpkg-relwithdebinfo/delvablo.exe
+            build-ninja-vcpkg-relwithdebinfo/devilutionx.exe
             build-ninja-vcpkg-relwithdebinfo/bz2.dll
             build-ninja-vcpkg-relwithdebinfo/libpng16.dll
             build-ninja-vcpkg-relwithdebinfo/libsodium.dll
