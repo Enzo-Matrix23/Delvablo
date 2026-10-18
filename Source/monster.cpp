@@ -609,7 +609,7 @@ std::expected<void, std::string> PlaceQuestMonsters()
 		RETURN_IF_ERROR(PlaceUniqueMonst(UniqueMonsterType::RedVex, 0, 0));
 		RETURN_IF_ERROR(PlaceUniqueMonst(UniqueMonsterType::BlackJade, 0, 0));
 	} else if (setlvlnum == SL_INCREDIFAT) {
-		RETURN_IF_ERROR(AddMonsterType(UniqueMonsterType::Incredifat, PLACE_SCATTER));
+		RETURN_IF_ERROR(AddMonsterType(UniqueMonsterType::Incredifat, PLACE_UNIQUE));
 		RETURN_IF_ERROR(PlaceUniqueMonst(UniqueMonsterType::Incredifat, 0, 0));
 	}
 	return {};

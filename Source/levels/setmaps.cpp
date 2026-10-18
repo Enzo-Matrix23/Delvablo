@@ -157,7 +157,7 @@ std::expected<void, std::string> LoadSetMap()
 		InitNoTriggers();
 		break;
 	case SL_INCREDIFAT:
-		RETURN_IF_ERROR(LoadL1Dungeon("levels\\forestdata\\incredifat.dun", { 22, 6 }));
+		RETURN_IF_ERROR(LoadL1Dungeon("levels\\forestdata\\example.dun", { 22, 6 }));
 		break;
 	case SL_ARENA_CHURCH:
 		RETURN_IF_ERROR(LoadArenaMap("arena\\church.dun", { 29, 22 }, { 28, 20 }));
