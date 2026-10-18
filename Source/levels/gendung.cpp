@@ -339,6 +339,8 @@ dungeon_type GetLevelType(int level)
 		return DTYPE_NEST;
 	if (level <= 24)
 		return DTYPE_CRYPT;
+	if (level <= 28)
+		return DTYPE_FOREST;
 
 	return DTYPE_NONE;
 }
