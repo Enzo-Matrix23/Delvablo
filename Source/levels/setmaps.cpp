@@ -164,6 +164,9 @@ std::expected<void, std::string> LoadSetMap()
 	case SL_ARENA_CIRCLE_OF_LIFE:
 		RETURN_IF_ERROR(LoadArenaMap("arena\\circle_of_death.dun", { 30, 26 }, { 29, 26 }));
 		break;
+	case SL_INCREDIFAT:
+		RETURN_IF_ERROR(LoadL1Dungeon("levels\\forestdata\\incredi.dun"));
+		break;
 	case SL_NONE:
 #ifdef _DEBUG
 		RETURN_IF_ERROR(LoadCustomMap(TestMapPath.c_str(), ViewPosition));

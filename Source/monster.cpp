@@ -400,6 +400,8 @@ Point GetUniqueMonstPosition(UniqueMonsterType uniqindex)
 			return { 38, 49 };
 		case UniqueMonsterType::SkeletonKing:
 			return { 35, 47 };
+		case UniqueMonsterType::Incredifat:
+			return { 7, 5 };
 		default:
 			break;
 		}
@@ -606,6 +608,9 @@ std::expected<void, std::string> PlaceQuestMonsters()
 		RETURN_IF_ERROR(PlaceUniqueMonst(UniqueMonsterType::Lazarus, 0, 0));
 		RETURN_IF_ERROR(PlaceUniqueMonst(UniqueMonsterType::RedVex, 0, 0));
 		RETURN_IF_ERROR(PlaceUniqueMonst(UniqueMonsterType::BlackJade, 0, 0));
+	} else if (setlvlnum == SL_INCREDIFAT) {
+		RETURN_IF_ERROR(AddMonsterType(UniqueMonsterType::Incredifat, PLACE_SCATTER));
+		RETURN_IF_ERROR(PlaceUniqueMonst(UniqueMonsterType::Incredifat, 0, 0));
 	}
 	return {};
 }
