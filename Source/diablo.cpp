@@ -1218,8 +1218,8 @@ void DiabloInitScreen()
 
 void SetApplicationVersions()
 {
-	*BufCopy(gszProductName, PROJECT_NAME, " v", PROJECT_VERSION) = '\0';
-	*BufCopy(gszVersionNumber, "version ", PROJECT_VERSION) = '\0';
+	*BufCopy(gszProductName, "Delvablo") = '\0';
+	*BufCopy(gszVersionNumber, "v0.0.2") = '\0';
 }
 
 void CheckArchivesUpToDate()
