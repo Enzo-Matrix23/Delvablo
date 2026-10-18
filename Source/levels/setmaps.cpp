@@ -34,6 +34,7 @@ const char *const QuestLevelNames[] = {
 	N_("Church Arena"),
 	N_("Hell Arena"),
 	N_("Circle of Life Arena"),
+	N_("Chamber of Incredible Butcher")
 };
 
 namespace {
@@ -165,7 +166,7 @@ std::expected<void, std::string> LoadSetMap()
 		RETURN_IF_ERROR(LoadArenaMap("arena\\circle_of_death.dun", { 30, 26 }, { 29, 26 }));
 		break;
 	case SL_INCREDIFAT:
-		RETURN_IF_ERROR(LoadL1Dungeon("levels\\forestdata\\incredi.dun"));
+		RETURN_IF_ERROR(LoadL1Dungeon("levels\\forestdata\\incredifat.dun", { 23, 5 }));
 		break;
 	case SL_NONE:
 #ifdef _DEBUG
