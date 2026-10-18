@@ -1284,18 +1284,17 @@ void GetOilType(Item &item, int maxLvl)
 	int cnt = 2;
 	int8_t rnd[32] = { 5, 6 };
 
-	if (!gbIsMultiplayer) {
-		if (maxLvl == 0)
-			maxLvl = 1;
+	if (maxLvl == 0)
+		maxLvl = 1;
 
-		cnt = 0;
-		for (size_t j = 0; j < sizeof(OilLevels) / sizeof(OilLevels[0]); j++) {
-			if (OilLevels[j] <= maxLvl) {
+	cnt = 0;
+	for (size_t j = 0; j < sizeof(OilLevels) / sizeof(OilLevels[0]); j++) {
+		if (OilLevels[j] <= maxLvl) {
 				rnd[cnt] = static_cast<int8_t>(j);
 				cnt++;
-			}
 		}
 	}
+	
 
 	const int8_t t = rnd[GenerateRnd(cnt)];
 
